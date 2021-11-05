@@ -12,9 +12,10 @@ export class ServicesService {
 
   constructor(private http:HttpClient) { }
 
-  movieRequest(){
+  movieRequest(query:string){
+    this.allmovies.splice(0,  this.allmovies.length) // Clear the movie array if it has content
     let promise = new Promise((resolve, reject)=>{
-      this.http.get<any>("http://www.omdbapi.com/?s=bla&apikey=963ca72a").toPromise().then(res => {
+      this.http.get<any>("http://www.omdbapi.com/?s="+ query +"&apikey=963ca72a").toPromise().then(res => {
         this.getallmovies(res)
         resolve('success');
       }, error =>{
