@@ -6,6 +6,13 @@
 
 This is a single page application that displays movies to the user when they search for a movie of their liking.
 
+Landing Page
+![Preview](./src/assets/images/landing.png)
+
+
+Search Results for Flash
+![Preview](./src/assets/images/flash.png)
+
 ---
 
 ## Access the website
