@@ -1,5 +1,26 @@
+$background-color: #242326;
 .navbar{
-  height: 40vh;
-  background-color: #242326;
+  background-color: $background-color;
   color: white;
+  .navbar-brand{
+    font-family: "Fruktur", cursive;
+    font-size: 40px;
+    color: white
+  }
+}
+.searchdiv{
+  background: #00000096 url('../../assets/images/background.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  height: 65vh;
+  input[type=search]{
+    width: 65vw;
+    border: none;
+    background: transparent;
+    color: white;
+    outline: none;
+    border-bottom: 2px solid white;
+    box-shadow: none;
+  }
 }

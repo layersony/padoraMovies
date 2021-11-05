@@ -10,6 +10,7 @@ export class ServicesService {
   allmovies: any = []
   movie: any = []
 
+
   constructor(private http:HttpClient) { }
 
   movieRequest(query:string){
