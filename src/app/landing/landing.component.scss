@@ -26,3 +26,20 @@ $border-radius : 10px;
     }
   }
 }
+
+.loadin{
+  height: 320px;
+  animation: loading 1.5s infinite linear;
+  background: #dfdfdf;
+  background-image: linear-gradient(to right, #dcdee0bb 0%, #f2f3f5 30%, #dcdee0bb 50%, #dcdee0bb 100%);
+  background-repeat: no-repeat;
+}
+
+@keyframes loading {
+  0% {
+    background-position: -15vw;
+  }
+  100%{
+    background-position: 15vw;
+  }
+}

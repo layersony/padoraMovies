@@ -15,7 +15,7 @@ export class NavbarComponent implements OnInit {
   constructor(private service:ServicesService) { }
 
   ngOnInit(): void {
-    this.service.movieRequest('action') // running movie request function
+    // this.service.movieRequest('action') // running movie request function
   }
 
   submitquery(){
