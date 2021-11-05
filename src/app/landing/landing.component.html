@@ -1,3 +1,14 @@
-<div *ngFor='let movie of movies'>
-<img src="{{movie.poster}}" alt="" srcset="">
+<div class="row">
+  <div class='col-md-3 ' *ngFor='let movie of movies'>
+    <div class="m-1 mt-4 movie">
+      <img src="{{movie.poster}}" alt="" class="img-fluid">
+      <div class="details">
+        <p>{{ movie.title }}</p>
+        <div class="minordetail">
+          <span>{{ movie.year }}</span>
+          <span>{{ movie.type }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

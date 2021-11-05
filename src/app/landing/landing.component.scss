@@ -1,0 +1,28 @@
+$border-radius : 10px;
+
+.movie{
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  background-color: transparent;
+  border-radius: $border-radius;
+  img{
+    max-height: 320px;
+    border-radius: $border-radius $border-radius 0 0;
+  }
+  .details{
+    background-color: rgb(27, 25, 25);
+    color: white;
+    text-align: start;
+    padding: 7px;
+    text-transform: capitalize;
+    border-radius: 0 0 $border-radius $border-radius;
+    p{
+      font-size: 16px;
+    }
+    .minordetail{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
