@@ -20,6 +20,5 @@ export class NavbarComponent implements OnInit {
 
   submitquery(){
     this.service.movieRequest(this.search)
-    console.log(this.search)
   }
 }
