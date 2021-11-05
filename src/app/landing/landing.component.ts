@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServicesService } from '../api/services.service'
 
 @Component({
   selector: 'app-landing',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  constructor() { }
+  movies: any =[]
+
+  constructor(private service:ServicesService) { }
 
   ngOnInit(): void {
+    this.service.movieRequest() // running movie request function
+    this.movies = this.service.allmovies
   }
 
 }
